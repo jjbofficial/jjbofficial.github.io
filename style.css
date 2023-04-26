@@ -1,0 +1,82 @@
+@import url(https://fonts.bunny.net/css?family=inter:300,600);
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+}
+
+section {
+    width: 50%;
+}
+
+.photo {
+    background-image: url(./me.jpg);
+    background-size: cover;
+}
+
+img {
+    width: 100%;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.heading {
+    font-size: 3rem;
+}
+
+.sub-heading {
+    font-size: 2rem;
+}
+
+.socials {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.socials a {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.socials svg {
+    width: 32px;
+    height: 32px;
+}
+
+@media (max-width: 1200px) {
+    .photo {
+        background-position: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .photo {
+        display: none;
+    }
+
+    /* main {
+        display: block;
+    } */
+
+    .details {
+        min-height: 100vh;
+        width: 100%;
+        background-image:  linear-gradient(120deg, rgba(43,43,43,1) 0%, rgba(210,210,210,0.3) 100%), url(./me.jpg);
+        background-position: center;
+        background-size: cover;
+        color: #eee;
+        text-align: center;
+    }
+}
